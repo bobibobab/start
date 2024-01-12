@@ -1,5 +1,6 @@
 # What I learned from this assignment
-**First:\n**
+**First:**
+<br>
 Some basic Git commands are:
 ```
 git status
@@ -7,7 +8,8 @@ git add
 git commit
 ```
 
-**Second:\n**
+**Second:**
+<br>
 How to solve conflict error.
 
 This site is for [README](https://github.com/bobibobab/startup/blob/main/README.md).
