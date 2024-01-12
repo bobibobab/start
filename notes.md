@@ -1,11 +1,10 @@
 # What I learned from this assignment
-** First **
-I learned some basic Git commands:
-'''
+**First**
+Some basic Git commands are:
+```
+git status
 git add
 git commit
-git push
-git pull
-'''
+```
 
-This site is for README FILE [README] (https://github.com/bobibobab/startup/blob/main/README.md)
+This site is for [README](https://github.com/bobibobab/startup/blob/main/README.md).
