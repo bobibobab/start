@@ -9,11 +9,11 @@ Do you remember how much you spent your money in this month? Many people have tr
 ### Design
 This is the main page.
 <br>
-\start\main.png
+[Main page of this application](\start\main.png)
 <br>
 This is the page when the users loged in and select a specific month.
 <br>
-\start\page1.png
+[Page1 of this application](\start\page1.png)
 
 ### Key features
 
