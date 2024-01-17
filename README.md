@@ -13,7 +13,7 @@ This is the main page.
 <br>
 This is the page when the users loged in and select a specific month.
 <br>
-[Page1 of this application](\start\page1.png)
+![Page1 of this application](/page1.png)
 
 ### Key features
 
