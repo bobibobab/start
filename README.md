@@ -28,17 +28,17 @@ This is the page when the users loged in and select a specific month.
 
 I am goinig to user the required technologies in the following ways.
 
-* HTML - Uses correct HTML structure for application. Many HTML pages for one for login and the others for day and months. Hyperlinks to choice artifact.
-* CSS - Application sytling that looks good on different screen sizes, uses, good whitesspace, color choice and contrast.
-* JavaScript - Provide login, choice display, calculating the total, display the graph, backend endpoint calls.
-* Service - Backend service with endpoints for:
+* **HTML** - Uses correct HTML structure for application. Many HTML pages for one for login and the others for day and months. Hyperlinks to choice artifact.
+* **CSS** - Application sytling that looks good on different screen sizes, uses, good whitesspace, color choice and contrast.
+* **JavaScript** - Provide login, choice display, calculating the total, display the graph, backend endpoint calls.
+* **Service** - Backend service with endpoints for:
     - login
     - calculating total
     - drawing graph
     - straging the comsumption
-* DB/Login - Store users, choices, and comsumption in database. Register and login users. Credentials securely stored in database. Cann't use this application unless authenticated.
-* WebSocket -  If the family use this application, their comsumption are broadcast to all other family members.
-* React - Application ported tu use the React web framework.
+* **DB/Login** - Store users, choices, and comsumption in database. Register and login users. Credentials securely stored in database. Cann't use this application unless authenticated.
+* **WebSocket** -  If the family use this application, their comsumption are broadcast to all other family members.
+* **React** - Application ported tu use the React web framework.
 
 
 
