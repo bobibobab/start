@@ -37,7 +37,7 @@ I am goinig to user the required technologies in the following ways.
     - straging the comsumption
 * **DB/Login** - Store users, choices, and comsumption in database. Register and login users. Credentials securely stored in database. Cann't use this application unless authenticated.
 * **WebSocket** -  If the family use this application, their comsumption are broadcast to all other family members.
-* **React** - Application ported tu use the React web framework.
+* **React** - Application ported to use the React web framework.
 
 
 
