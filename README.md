@@ -21,7 +21,7 @@ This is the page when the users loged in and select a specific month.
 * Store data what the user spent
 * Display the graph of what the user spent in a month
 * Ability to calculate the total
-* Keep track the current date
+* To keep tracking the current date
 
 ### Technologies
 
