@@ -4,8 +4,7 @@
 
 ### Elevator pitch
 
-Do you remember how much you spent your money in this month? Many people have trouble to keep track their comsumption. Because of this problem, many people spent their moeny more than they expected. This financial ledger application helps the users keep track thier comsumption, and calculate their total of comsumption. Each user can make their financial ledger and input their expenditures and income. After that, this application makes total comsumption as a graph.
-
+Do you recall your monthly spending? Numerous individuals struggle to monitor their expenses, leading them to exceed their budgeted amounts. To address this issue, our financial ledger application aids users in tracking their expenditures and calculating their overall spending. Users can create personalized financial ledgers to input both their expenses and income. Subsequently, the application generates a graphical representation of their total spending.
 ### Design
 This is the main page.
 <br>
