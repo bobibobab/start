@@ -36,8 +36,20 @@ I am goinig to user the required technologies in the following ways.
     - drawing graph
     - straging the comsumption
 * **DB/Login** - Store users, choices, and comsumption in database. Register and login users. Credentials securely stored in database. Cann't use this application unless authenticated.
-* **WebSocket** -  If the family use this application, their comsumption are broadcast to all other family members.
+* **WebSocket** -  updating the data what the user spent live.
 * **React** - Application ported to use the React web framework.
+
+## Specification Deliverable
+
+For this deliverable I built out the structure of my application using HTML.
+
+* **HTML pages** - Several HTML pages that represent the ability to login and comsumtion.
+* **Links** - The login page links to the comsumtion january page. Each months pages contains links each others for comsumtion information.
+* **Text** - Each of months' comsumtions is represented by a textual description.
+* **Images** - Applicaiont images on the main.
+* **DB/Login/Comsumtion/Graph** - Input box for login and item. The comsumtions represent data pulled from the database.
+* **WebSocket** - The graph of comsuming represent what user spent in a month live.
+
 
 
 
