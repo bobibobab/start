@@ -25,6 +25,10 @@ How to solve conflict error.
 1. List can be created in HTML by using <ul>
 1. Table can be created in HTML by using <table>
 
+**CSS**
+<br>
+1. I learned that flex display is useful when we want to partition our application into areas that responsively move around as the window resizes or the orientation changes.
+
 
 
 This site is for [README](https://github.com/bobibobab/startup/blob/main/README.md).
