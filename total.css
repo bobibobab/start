@@ -1,0 +1,152 @@
+body {
+    background-image: url("https://images4.alphacoders.com/133/1338472.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+}
+
+header {
+    padding-right: 2em;
+}
+
+.home {
+    border-radius: 25px;
+    background-color: rgba(18, 18, 16, 0.073);
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 80px;
+    align-items: center;
+}
+
+.comsumtion {
+    border-radius: 25px;
+    background-color: rgba(18, 18, 16, 0.073);
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 80px;
+    align-items: center;
+}
+
+.about {
+    border-radius: 25px;
+    background-color: rgba(18, 18, 16, 0.073);
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 80px;
+    align-items: center;
+}
+
+.home:hover {
+    background-color: rgba(26, 161, 116, 0.516);
+}
+
+.comsumtion:hover {
+    background-color: rgba(26, 161, 116, 0.516);
+}
+
+.about:hover {
+    background-color: rgba(26, 161, 116, 0.516);
+}
+
+nav {
+    flex: 0 50px;
+    font-size: 30px;
+    padding: 0 0em;
+    font-family: "Sofia", sans-serif;
+    color: rgb(243, 245, 243);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.Date {
+    padding-right: 2em;
+    text-align: right;
+    font-family: "Audiowide", sans-serif;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.verticalMenu {
+    clear: both;
+    grid-row: 1/2;
+    padding-right: 1em;
+    padding-left: 1em;
+    list-style-type: none;
+    font-size: 25px;
+    font-family: "Audiowide", sans-serif;
+    border-radius: 25px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: rgba(35, 136, 49, 0.753);
+    color: white;
+    width: 200px;
+    height: 1000px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.total {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.731);
+    font-family: "Audiowide", sans-serif;
+    color: white;
+    width: 100%;
+    height:100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer {
+    width: 100%;
+    font-size: 15px;
+    flex: 0 50px;
+    background: hsl(180, 5%, 20%);
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width:800px) {
+
+    nav {
+        font-size: 26px;
+    }
+}

@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="comsumtion.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    </head>
     <header>
         <title>comsumtion_Jaunary</title>
-        <img src="https://api.sherbert.cimpress.io/v2/assets/ezQLGBGRyaJgMpfFc3KkI~200/webPreview?signature=3adeb2396468bd23ed00497400bf2d6e110d0902" alt="logo" width="500" height="600">
         <nav>
-            <menu>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/comsumtion_jaunary.html">My consumtion</a>
-                </li>
-                <li>
-                    <a href="/About.html">About</a>
-                </li>
-            </menu>
+            <a href="/"><img
+                    src="https://api.sherbert.cimpress.io/v2/assets/ezQLGBGRyaJgMpfFc3KkI~200/webPreview?signature=3adeb2396468bd23ed00497400bf2d6e110d0902"
+                    alt="logo" width="90" height="90"></a>
+            <div class="home">
+                <a href="/">Home</a>
+            </div>
+            <div class="comsumtion">
+                <a href="/comsumtion_jaunary.html">My consumtion</a>
+            </div>
+        
+            <div class="about"><a href="/About.html">About</a></div>
+        
+            </div>
         </nav>
-            <h1>2024/02/04</h1>
+        
+            
         </header>
     
         <body>
-            <menu>
+            <div class="Date">
+                <h1>2024/02/04</h1>
+            </div>
+            
+            <div class="upside">
+            <div class="verticalMenu">
+                
                 <li>
                     <a href="/comsumtion_jaunary.html">Jaunary</a>
                 </li>
+            
                 <li>
                     <a href="/comsumtion_Feb.html">February</a>
                 </li>
@@ -60,10 +75,10 @@
                 <li>
                     <a href="/Total.html">Total</a>
                 </li>
-            </menu>
-    
-            <main>
-                <div>
+            </div>
+            
+            <div class="expense">
+                <div class="traffic">
                     <table>
                         <h2>Traffic</h2>
                         <tr>
@@ -79,14 +94,14 @@
                             <td>$100</td>
                         </tr>
                     </table>
-    
+                
                     <label for="Item">Item: </label>
                     <input type="Item" id="item" name="Item" />
                     <label for="Price">Price: </label>
                     <input type="Price" id="Price" name="Price" />
                 </div>
-            
-                <div>
+                
+                <div class="fixedExpenses">
                     <table>
                         <h2>Fixed expenses</h2>
                         <tr>
@@ -107,51 +122,8 @@
                     <label for="Price">Price: </label>
                     <input type="Price" id="Price" name="Price" />
                 </div>
-                
-        
-                <div>
-                    <table>
-                        <h2>Food</h2>
-                        <tr>
-                            <th>Item</th>
-                            <th>Price</th>
-                        </tr>
-                        <tr>
-                            <td>Banana</td> 
-                            <td>$100</td>
-                        </tr>
-                        <tr>
-                            <td>Meat</td>
-                            <td>$100</td>
-                            
-                        </tr>
-                    </table>
-                    <label for="Item">Item: </label>
-                    <input type="Item" id="item" name="Item" />
-                    <label for="Price">Price: </label>
-                    <input type="Price" id="Price" name="Price" />
-                </div>
-                
-        
-                <div>
-                    <table>
-                        <h2>Other</h2>
-                        <tr>
-                            <th>Item</th>
-                            <th>Price</th>
-                        </tr>
-                        <tr>
-                            <td>Firends' birthday</td>
-                            <td>$100</td>
-                        </tr>
-                    </table>
-                    <label for="Item">Item: </label>
-                    <input type="Item" id="item" name="Item" />
-                    <label for="Price">Price: </label>
-                    <input type="Price" id="Price" name="Price" />
-                </div>
-        
-                <div>
+
+                <div class="income">
                     <table>
                         <h2>Income</h2>
                         <tr>
@@ -170,17 +142,62 @@
                 </div>
                 
                 
-                <div>
-                    <h2>Journal</h2>
-                    <label for="textarea">Journal: </label>
-                    <textarea id="textarea" name="varTextarea"></textarea>
+                <div class="food">
+                    <table>
+                        <h2>Food</h2>
+                        <tr>
+                            <th>Item</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>Banana</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>Meat</td>
+                            <td>$100</td>
+                
+                        </tr>
+                    </table>
+                    <label for="Item">Item: </label>
+                    <input type="Item" id="item" name="Item" />
+                    <label for="Price">Price: </label>
+                    <input type="Price" id="Price" name="Price" />
                 </div>
-        
-                <div>
-                    <h2>Graph</h2>
-                    <p>Placeholder for 3rd party service calls.</p>
+                
+                
+                <div class="other">
+                    <table>
+                        <h2>Other</h2>
+                        <tr>
+                            <th>Item</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>Firends' birthday</td>
+                            <td>$100</td>
+                        </tr>
+                    </table>
+                    <label for="Item">Item: </label>
+                    <input type="Item" id="item" name="Item" />
+                    <label for="Price">Price: </label>
+                    <input type="Price" id="Price" name="Price" />
                 </div>
-            </main>
+                </div>
+            </div>
+
+            <div class="underside">
+                <div class="journal">
+                <h2>Journal</h2>
+                <label for="textarea">Journal: </label>
+                <textarea id="textarea" name="varTextarea"></textarea>
+            </div>
+            
+            <div class="graph">
+                <h2>Graph</h2>
+                <p>Placeholder for 3rd party service calls.</p>
+            </div></div>
+            
     
             <hr>
             <footer>
