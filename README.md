@@ -39,7 +39,7 @@ I am goinig to user the required technologies in the following ways.
 * **WebSocket** -  updating the data what the user spent live.
 * **React** - Application ported to use the React web framework.
 
-## Specification Deliverable
+## HTML Deliverable
 
 For this deliverable I built out the structure of my application using HTML.
 
@@ -49,6 +49,17 @@ For this deliverable I built out the structure of my application using HTML.
 * **Images** - Applicaiont images on the main.
 * **DB/Login/Comsumtion/Graph** - Input box for login and item. The comsumtions represent data pulled from the database.
 * **WebSocket** - The graph of comsuming represent what user spent in a month live.
+
+## CSS Deliverable
+
+For this deliverable I properly styled the application into its final appearance.
+
+* **Header, footer, and main content body**
+* **Navigation elements** - I used hover for the nav bar and dropped the underlines and changed the color for anchor elements.
+* **Responsive to window resizing** - My app looks great on all window sizes and devices
+* **Application elements** - Used flex and grid to look good contrast and whitespace.
+* **Application text content ** - Consistent fonts
+* **Application images ** - I used the background image and logo image, and put the home line on the logo image.
 
 
 
