@@ -38,6 +38,21 @@ How to solve conflict error.
 1. Hover is great way to decorate the navigation bar.
 1. I can fix the location of the footer or something by using (position: fixed).
 
+**JavsScript**
+<br>
+1. I could learn how to connect js file into the html by using <script src = "fileName"></script>.
+1. I could find the div class and id by using document.getElementbyId or ClassName().
+1. I could make an array to save the datas.
+1. LocalStorage only can save as the string data type, so I need to use JSON to parse from string to some datatype.
+1. Document Object Model is an object representation of the HTML elements that the browser uses to render the display.
+1. For long running or blocking task, I should use a JavaScript Promist. I can create the Promist objeect constructor and passing it an executor function.
+1. There are several function type in JS. Such as arrow functions. EX) a.sort((v1, v2) => v1 - v2);
+1. JS should use console.log function to print the output. It is useful for me to debug something that I could not understand it.
+1. I could find sources for JS from the webpage's inspect section. 
+1. I could use the chart in JS, but I need to use script for the chart before using it, and I can create the Chart object.
+
+
+
 
 
 
