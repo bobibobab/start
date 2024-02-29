@@ -58,9 +58,17 @@ For this deliverable I properly styled the application into its final appearance
 * **Navigation elements** - I used hover for the nav bar and dropped the underlines and changed the color for anchor elements.
 * **Responsive to window resizing** - My app looks great on all window sizes and devices
 * **Application elements** - Used flex and grid to look good contrast and whitespace.
-* **Application text content ** - Consistent fonts
-* **Application images ** - I used the background image and logo image, and put the home line on the logo image.
+* **Application text content** - Consistent fonts
+* **Application images** - I used the background image and logo image, and put the home line on the logo image.
 
+## JavaScript deliverable
+
+For this deliverable I implemented by JavaScript so that the application works for a single user. I also added placeholders for future technology.
+
+* **login** - When you press the login button, it takes you to the comsumption janunary page with the stored username.
+* **database** - When a user write the item and price on the input space and press the enter, the application display will show the item and price on the table. The item and price are saved from the local storage, but it will be replaced with the database data later.
+* **Websocket** - I used the the function to display the total price and make ranking table from the database in order to show the other users' total payment ranking whenever the user put their payments. This will be replaced with WebSocket elements later.
+* **application logic** - I drawed the pie chart on the bottom of the page when the user put their payment. 
 
 
 
