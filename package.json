@@ -1,0 +1,15 @@
+{
+  "name": "start",
+  "version": "1.0.0",
+  "description": "Do you recall your monthly spending? Numerous individuals struggle to monitor their expenses, leading them to exceed their budgeted amounts. To address this issue, our financial ledger application aids users in tracking their expenditures and calculating their overall spending. Users can create personalized financial ledgers to input both their expenses and income. Subsequently, the application generates a graphical representation of their total spending.\r ### Design\r This is the main page.\r <br>\r ![Main page of this application](/main.png)\r <br>\r This is the page when the users loged in and select a specific month.\r <br>\r ![Page1 of this application](/page1.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
