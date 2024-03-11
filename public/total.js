@@ -1,4 +1,3 @@
-
 var totals = JSON.parse(localStorage.getItem("webSocket"));
 addTotal(totals);
 
@@ -14,14 +13,8 @@ function calculateRanking(totals){
 }
 function addRowTotalRank(table, totals) {
     var table = document.getElementById("totalTable");
-    if (table) {
-        console.log("Table found!");
-    } else {
-        console.log("Table not found!");
-    }
+    
     calculateRanking(totals);
-
-    console.log("adding process");
     for (var i = 0; i < totals.length; i++) {
         var newRow = table.insertRow(-1);
 
@@ -37,11 +30,6 @@ function addRowTotalRank(table, totals) {
 
 export function addTotal(totals){
     var table = document.getElementById("totalTable");
-    if (table) {
-        console.log("Table found!");
-    } else {
-        console.log("Table not found!");
-    }
     addRowTotalRank(table, totals);
 }
 

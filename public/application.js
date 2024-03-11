@@ -1,5 +1,6 @@
 
-var totals = []
+var totals = [];
+var datas = [];
 var total = 0;
 // putting the current date.
 var date = new Date();
@@ -30,8 +31,6 @@ const totalData = {
     "total" : 0
 }
 
-// data of the dataID
-var datas = []
 
 // Data for the xvalue.
 const dict = {
@@ -95,7 +94,7 @@ function deleteChart(){
     
 }
 
-document.getElementById("otherTableButton").addEventListener("click", function () {
+document.getElementById("otherTableButton").addEventListener("click", async function () {
     var item = document.getElementById("otherItem").value;
     var price = document.getElementById("otherPrice").value;
     var table = document.getElementById("otherTable");
@@ -107,7 +106,16 @@ document.getElementById("otherTableButton").addEventListener("click", function (
 
     data["type"] = "other";
     data["price"] = price;
-    datas.push(data);
+
+    const comsumption_res = await fetch('/api/comsumption', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(data),
+    });
+
+    const datas_res = await fetch('/api/datas');
+    datas = await datas_res.json();
+
     localStorage.setItem("Data", JSON.stringify(datas));
     addRowForOther(table, item, price);
     addvalue("other", price);
@@ -116,14 +124,22 @@ document.getElementById("otherTableButton").addEventListener("click", function (
     drawChart(x, y);
 
     //Websocket thing
-    total += Number(price);
-    totalData["total"] = total;
-    var foundObj = totals.find(item => item.username === username);
+    totalData["total"] = Number(price);
+
+    const response = await fetch('/api/total', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(totalData),
+    });
+
+    const res = await fetch('/api/totals');
+    var total = await res.json();
+    totalData["total"] = Number(total["total"]);
    
     localStorage.setItem("webSocket", JSON.stringify(totals));
 });
 
-document.getElementById("foodTableButton").addEventListener("click", function () {
+document.getElementById("foodTableButton").addEventListener("click", async function () {
     var item = document.getElementById("foodItem").value;
     var price = document.getElementById("foodPrice").value;
     var table = document.getElementById("foodTable");
@@ -134,7 +150,15 @@ document.getElementById("foodTableButton").addEventListener("click", function ()
     }
     data["type"] = "food";
     data["price"] = price;
-    datas.push(data);
+    const comsumption_res = await fetch('/api/comsumption', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(data),
+    });
+
+    const datas_res = await fetch('/api/datas');
+    datas = await datas_res.json();
+
     localStorage.setItem("Data", JSON.stringify(datas));
     addRowForOther(table, item, price);
     addvalue("food", price);
@@ -144,13 +168,20 @@ document.getElementById("foodTableButton").addEventListener("click", function ()
     
 
     //Websocket thing
-    total += Number(price);
-    totalData["total"] = total;
-    
+    totalData["total"] = Number(price);
+    const response = await fetch('/api/total', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(totalData),
+    });
+    const res = await fetch('/api/totals');
+    var total = await res.json();
+    totalData["total"] = Number(total["total"]);
+
     localStorage.setItem("webSocket", JSON.stringify(totals));
 });
 
-document.getElementById("trafficTableButton").addEventListener("click", function () {
+document.getElementById("trafficTableButton").addEventListener("click", async function () {
     var item = document.getElementById("trafficItem").value;
     var price = document.getElementById("trafficPrice").value;
     var table = document.getElementById("trafficTable");
@@ -161,7 +192,14 @@ document.getElementById("trafficTableButton").addEventListener("click", function
     }
     data["type"] = "traffic";
     data["price"] = price;
-    datas.push(data);
+    const comsumption_res = await fetch('/api/comsumption', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(data),
+    });
+
+    const datas_res = await fetch('/api/datas');
+    datas = await datas_res.json();
     localStorage.setItem("Data", JSON.stringify(datas));
     addRowForOther(table, item, price);
     addvalue("traffic", price);
@@ -171,13 +209,21 @@ document.getElementById("trafficTableButton").addEventListener("click", function
    
     
     //Websocket thing
-    total += Number(price);
-    totalData["total"] = total;
-    
+    totalData["total"] = Number(price);
+    const response = await fetch('/api/total', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(totalData),
+    });
+
+    const res = await fetch('/api/totals');
+    var total = await res.json();
+    totalData["total"] = Number(total["total"]);
+
     localStorage.setItem("webSocket", JSON.stringify(totals));
 });
 
-document.getElementById("fixedExpensesTableButton").addEventListener("click", function () {
+document.getElementById("fixedExpensesTableButton").addEventListener("click", async function () {
     var item = document.getElementById("fixedExpensesItem").value;
     var price = document.getElementById("fixedExpensesPrice").value;
     var table = document.getElementById("fixedExpensesTable");
@@ -188,7 +234,15 @@ document.getElementById("fixedExpensesTableButton").addEventListener("click", fu
     }
     data["type"] = "fixedExpenses";
     data["price"] = price;
-    datas.push(data);
+    const comsumption_res = await fetch('/api/comsumption', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(data),
+    });
+
+    const datas_res = await fetch('/api/datas');
+    datas = await datas_res.json();
+
     localStorage.setItem("Data", JSON.stringify(datas));
     addRowForOther(table, item, price);
     addvalue("fixedExpenses", price);
@@ -197,14 +251,22 @@ document.getElementById("fixedExpensesTableButton").addEventListener("click", fu
     drawChart(x, y);
 
     //Websocket thing
-    total += Number(price);
-    totalData["total"] = total;
-    var foundObj = totals.find(itme => item.username === username);
+    totalData["total"] = Number(price);
+    const response = await fetch('/api/total', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(totalData),
+    });
     
+    const res = await fetch('/api/totals');
+    var total = await res.json();
+
+    totalData["total"] = Number(total["total"]);
+
     localStorage.setItem("webSocket", JSON.stringify(totals));
 });
 
-document.getElementById("incomeTableButton").addEventListener("click", function () {
+document.getElementById("incomeTableButton").addEventListener("click", async function () {
     var item = document.getElementById("incomeItem").value;
     var price = document.getElementById("incomePrice").value;
     var table = document.getElementById("incomeTable");
@@ -215,7 +277,15 @@ document.getElementById("incomeTableButton").addEventListener("click", function 
     }
     data["type"] = "income";
     data["price"] = price;
-    datas.push(data);
+    const comsumption_res = await fetch('/api/comsumption', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(data),
+    });
+
+    const datas_res = await fetch('/api/datas');
+    datas = await datas_res.json();
+
     localStorage.setItem("Data", JSON.stringify(datas));
     addRowForOther(table, item, price);
     addvalue("income", price);
@@ -224,9 +294,18 @@ document.getElementById("incomeTableButton").addEventListener("click", function 
     drawChart(x, y);
 
     //Websocket thing
-    total += Number(price);
-    totalData["total"] = total;
-    
+    totalData["total"] = Number(price);
+    const response = await fetch('/api/total', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(totalData),
+    });
+
+    const res = await fetch('/api/totals');
+    var total = await res.json();
+
+    totalData["total"] = Number(total["total"]);
+
     localStorage.setItem("webSocket", JSON.stringify(totals));
 });
 
