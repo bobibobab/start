@@ -21,7 +21,7 @@ async function login(){
         userInfo = localStorage.getItem("username");
         newUser = JSON.parse(userInfo);
 
-        window.location.href = "comsumtion_jaunary.html";
+        //window.location.href = "comsumtion_jaunary.html";
     }
     
 }

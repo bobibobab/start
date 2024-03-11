@@ -70,5 +70,14 @@ For this deliverable I implemented by JavaScript so that the application works f
 * **Websocket** - I used the the function to display the total price and make ranking table from the database in order to show the other users' total payment ranking whenever the user put their payments. This will be replaced with WebSocket elements later.
 * **application logic** - I drawed the pie chart on the bottom of the page when the user put their payment. 
 
+## Service deliverable
+
+For this deliverable I added backend endpoints that receives username, password, total comsumption, item that the user spend, and price.
+
+* **Node.js/Express HTTP service** - Done. You can use [localhost](http://localhost:3000/).
+* **Static middleware for frontend** - Done.
+* **Calls to third party endpoints** - I used the third party endpoints for getting the quote.
+* **Backend service endpoints** - Get and Post the username and password. Total comsumption and price and tiem also are used as the endpoints.
+* **Frontend calls service endpoints** - I did this using the fetch function.
 
 

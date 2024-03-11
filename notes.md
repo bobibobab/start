@@ -51,6 +51,20 @@ How to solve conflict error.
 1. I could find sources for JS from the webpage's inspect section. 
 1. I could use the chart in JS, but I need to use script for the chart before using it, and I can create the Chart object.
 
+**Service**
+<br>
+1. Service is saving the user input and sending it to the server.
+1. Server and client can have connection each other.
+1. Fetch help to call the server endpoint in js file with the url.
+1. Node.js took the V8 engine and ran it inside of a console application. When we run a JS program in Chrome or Node.js, V8 can read my code and executes it.
+1. We can make node package manager by using npm init -y.
+1. We can install the package with the name of package. npm install packagename.
+1. We need to check if my node_modules include in my .gitignore file.
+1. We can install npm install express to use express.
+1. Express is useful for us to define routes, use middleware, and error handling middleware.
+1. We can build in middleware for static file hosting. app.use(express.static('public'));
+
+
 
 
 
