@@ -87,7 +87,7 @@ For this deliverable I associate the web application with logged in user. I stor
 * **MongoDB Atlas database created** - Done.
 * **Stores data in MongoDB** - Done.
 * **User registration** - Creates a new account in the database.
-* **existing user** - Store the total under the same user if the user already exists. Existed user cannot create the same account to.
+* **existing user** - Store the total under the same user if the user already exists. Existed user cannot create the same account.
 * **Use MongoDB to store credentials** - Stores user and total that the user spent and comsumption.
 * **Restricts functionality** - You cannot use this application until you have logged in.
 
