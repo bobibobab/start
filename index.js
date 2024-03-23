@@ -15,11 +15,6 @@ app.use(express.static('public'));
 
 app.set('trust proxy', true);
 
-let total = {};
-let user = {};
-let data = {};
-let datas = [];
-
 var apiRouter = express.Router();
 app.use('/api', apiRouter);
 apiRouter.post('/auth/create', async (req, res) => {
