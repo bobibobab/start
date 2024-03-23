@@ -1,3 +1,6 @@
-apiRouter.post('/login', async (req, res) => {
-//     res.send(req.body.username);
-// });
+
+//get total
+apiRouter.get('/totals', async (_req, res) => {
+    res.json(total);
+});
+

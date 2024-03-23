@@ -3,10 +3,6 @@ addTotal(totals);
 
 function calculateRanking(totals){
 
-    totals.sort(function(a, b){
-        return b.total - a.total;
-    });
-
     for (var i = 0; i < totals.length; i ++){
         totals[i]["rank"] = i + 1;
     }
