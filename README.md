@@ -80,4 +80,14 @@ For this deliverable I added backend endpoints that receives username, password,
 * **Backend service endpoints** - Get and Post the username and password. Total comsumption and price and tiem also are used as the endpoints.
 * **Frontend calls service endpoints** - I did this using the fetch function.
 
+## DB/Login deliverable
+
+For this deliverable I associate the web application with logged in user. I stored the comsumption that user made in the database.
+
+* **MongoDB Atlas database created** - Done.
+* **Stores data in MongoDB** - Done.
+* **User registration** - Creates a new account in the database.
+* **existing user** - Store the total under the same user if the user already exists. Existed user cannot create the same account to.
+* **Use MongoDB to store credentials** - Stores user and total that the user spent and comsumption.
+* **Restricts functionality** - You cannot use this application until you have logged in.
 

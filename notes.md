@@ -64,6 +64,19 @@ How to solve conflict error.
 1. Express is useful for us to define routes, use middleware, and error handling middleware.
 1. We can build in middleware for static file hosting. app.use(express.static('public'));
 
+**Login/DB**
+<br>
+1. Before using the databae, I have to download database in the same file by using the npm install mongodb.
+1. bcrypt compare function use the hashcode to compare the password, so I need to change the hashcode and save it in the database.
+1. We can make restriction by making the display in js. 
+1. If I installed uuid, we can make authtoken by using uuid.v4().
+1. That token nis stored ina cookie that is passed back to my web service on each request. The service can associate data that the user supplies with a unique identifier that corresponds to thier authorization token.
+1. If I created database in mongodb, we can use username and password and hostname. And we can use url by using those information to connect mongodb with my device.
+1. When user login, we need to compare the password after finding the username from the database.
+1. To not create existed user, we need to check if the user is in the database or not, then we can decide to make a new user or not.
+1. When I need to update data through the mongodb, I need to make filter and the content that I want to update. And I can use the updateOne function.
+1. When I need to find or insert, I can use the find function and insert function. I can also use sort by using the query and option to sort the value.
+
 
 
 
