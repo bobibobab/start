@@ -56,4 +56,3 @@ function peerProxy(httpServer){
 
 module.exports = { peerProxy };
     
-}
