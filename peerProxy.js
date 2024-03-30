@@ -2,7 +2,7 @@ const { WebSocketServer } = require('ws');
 const uuid = require('uuid');
 
 function peerProxy(httpServer){
-    const wss = new WebSocketServer({noServer: ture});
+    const wss = new WebSocketServer({ noServer: true });
 
     httpServer.on('upgrade', (request, socket, head) => {
         wss.handleUpgrade(request, socket, head, function done(ws){
@@ -19,16 +19,14 @@ function peerProxy(httpServer){
         // Forward messages to everyone except the sender
         ws.on('message', function message(data) {
             connections.forEach((c) => {
-                if (c.id !== connection.id) {
-                    c.ws.send(data);
-                }
+                c.ws.send(data);
+                
             });
         });
 
         // Remove the closed connection so we don't try to forward anymore
         ws.on('close', () => {
             const pos = connections.findIndex((o, i) => o.id === connection.id);
-
             if (pos >= 0) {
                 connections.splice(pos, 1);
             }

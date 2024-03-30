@@ -1,5 +1,5 @@
 
-
+configureWebSocket();
 var totals = [];
 var datas = [];
 var total = 0;
@@ -137,6 +137,7 @@ document.getElementById("otherTableButton").addEventListener("click", async func
     var total = await res.json();
    
     localStorage.setItem("webSocket", JSON.stringify(total));
+    broadcastEvent(newUser["username"], price);
 });
 
 document.getElementById("foodTableButton").addEventListener("click", async function () {
@@ -178,6 +179,7 @@ document.getElementById("foodTableButton").addEventListener("click", async funct
     var total = await res.json();
 
     localStorage.setItem("webSocket", JSON.stringify(total));
+    broadcastEvent(newUser["username"], price);
 });
 
 document.getElementById("trafficTableButton").addEventListener("click", async function () {
@@ -219,6 +221,7 @@ document.getElementById("trafficTableButton").addEventListener("click", async fu
     var total = await res.json();
 
     localStorage.setItem("webSocket", JSON.stringify(total));
+    broadcastEvent(newUser["username"], price);
 });
 
 document.getElementById("fixedExpensesTableButton").addEventListener("click", async function () {
@@ -261,7 +264,7 @@ document.getElementById("fixedExpensesTableButton").addEventListener("click", as
 
     localStorage.setItem("webSocket", JSON.stringify(total));
 
-    broadcastEvent(username, price);
+    broadcastEvent(newUser["username"], price);
 });
 
 document.getElementById("incomeTableButton").addEventListener("click", async function () {
@@ -303,6 +306,7 @@ document.getElementById("incomeTableButton").addEventListener("click", async fun
     var total = await res.json();
 
     localStorage.setItem("webSocket", JSON.stringify(total));
+    broadcastEvent(newUser["username"], price);
 });
 
 
@@ -330,23 +334,23 @@ function makeArray(dict){
 }
 
 function configureWebSocket() {
-    const protocal = window.location.protocol === 'http:' ? 'ws' : 'wss';
+    const protocol = window.location.protocol === 'http:' ? 'ws' : 'wss';
     socket = new WebSocket(`${protocol}://${window.location.host}/ws`);
     socket.onopen = (event) => {
-        displyMsg('system', 'game', 'connected');
+        displayMsg('user', 'moneyMom', 'connected');
     };
     socket.onclose = (event) => {
-        displyMsg('system', 'game', 'disconnected');
+        displayMsg('user', 'moneyMom', 'disconnected');
     };
     socket.onmessage = async (event) => {
         const msg = JSON.parse(await event.data.text());
-        displayMsg("User", msg.from, `payed ${msg.value}`);
+        displayMsg('user', msg.from, `payed ${msg.value}`);
     };
 }
 
 function displayMsg(cls, from, msg) {
     const charText = document.querySelector('#comsumption_messages');
-    charText.innerHTML = `<div class="event"><span class="${cls}-event">${from}</span> ${msg}</div>` + chatText.innerHTML;
+    charText.innerHTML = `<div class="event"><span class="${cls}-event">${from}</span> ${msg}</div>` + charText.innerHTML;
 }
 
 function broadcastEvent(from, value) {
