@@ -91,3 +91,11 @@ For this deliverable I associate the web application with logged in user. I stor
 * **Use MongoDB to store credentials** - Stores user and total that the user spent and comsumption.
 * **Restricts functionality** - You cannot use this application until you have logged in.
 
+## WebSocket deliverable
+
+For this deliverable I used webSocket to update the votes on the frontend in realtime.
+
+* **Backend listens for WebSocket connection** - done!
+* **Frontend makes WebSocket connection** - done!
+* **Data sent over WebSocket connection** - done!
+* **WebSocket data displayed** - All user payments display in real time.
