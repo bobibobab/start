@@ -1,0 +1,40 @@
+.comsumption{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-left: 50px;
+}
+.date{
+    text-align: right;
+}
+
+
+.PaymentBox{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(11, 53, 24, 0.721);
+    width: 60%;
+    height: 30%;
+    border-radius: 25px;
+    
+}
+
+.incomeBox{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(154, 169, 42, 0.616);
+    width: 60%;
+    height: 30%;
+    border-radius: 25px;
+}
+
+.dashboard {
+    background-color: rgba(29, 30, 28, 0.772);
+    width: 30%;
+    height: 14%;
+    border-radius: 25px;
+}

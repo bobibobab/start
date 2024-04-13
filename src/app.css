@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Audiowide");
 
 .body {
+  
+  background-image: url("https: //media.istockphoto.com/id/1125924767/vector/vector-set-of-design-templates-and-elements-for-money-in-trendy-linear-style-seamless.jpg?s=612x612&w=0&k=20&c=8kZXIpr87uj5H8Ez3fuAGw5dheoGd1chZmIcRqNSD7I=");
+  background-size: cover;
   font-family: "Audiowide", sans-serif;
   display: flex;
   flex-direction: column;
   min-width: 375px;
   height: 100vh;
 }
+
 
 header {
   flex: 0 80px;
@@ -16,7 +20,6 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
 }
 
@@ -39,6 +42,7 @@ menu {
 
 menu .nav-item {
   padding: 0 0.3em;
+  font-size: 25px;
 }
 
 footer a {
