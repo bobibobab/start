@@ -40,7 +40,7 @@ export function Total() {
                 <tbody>
                     {totals.map((total, index) => (
                         <tr key={index}>
-                            <td>{index}</td>123
+                            <td>{index}</td>12
                             <td>{total.username}</td>
                             <td>{total.total}</td>
                         </tr>
