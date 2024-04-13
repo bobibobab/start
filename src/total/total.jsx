@@ -42,7 +42,7 @@ export function Total() {
                         <tr key={index}>
                             <td>{index}</td>
                             <td>{total.username}</td>
-                            <td>{total.total}</td
+                            <td>{total.total}</td>
                         </tr>
                     ))}
                 </tbody>
