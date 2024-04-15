@@ -99,3 +99,12 @@ For this deliverable I used webSocket to update the votes on the frontend in rea
 * **Frontend makes WebSocket connection** - done!
 * **Data sent over WebSocket connection** - done!
 * **WebSocket data displayed** - All user payments display in real time.
+
+## React deliverable
+
+For this deliverable I converted the application over to use React.
+
+* **Bundled and transpiled** - done!
+* **Components** - Login, comsumption, and ranking total!
+* **Router** - Routing between login, total, about,and comsumption!
+* **Hooks** - I used useState hook and useEffect hook. 
